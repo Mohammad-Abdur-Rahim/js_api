@@ -12,7 +12,7 @@ function displayPhone(phones) {
         
         //step-2 create div
         const phonecard = document.createElement('div')
-        phonecard.classList = `card w-96 bg-base-100 shadow-xl`
+        phonecard.classList = `card p-4 bg-base-100 shadow-xl`
          //step-3 create innerhtml
         phonecard.innerHTML = `
         <figure><img src="${phone.image}" alt="Shoes" /></figure>
@@ -31,3 +31,9 @@ function displayPhone(phones) {
     });
 }
 loadPhon()
+//handle search function
+function handleSearch(){
+const searchField=document.getElementById('searchField')
+const searchText=searchField.value;
+console.log(searchText)
+}

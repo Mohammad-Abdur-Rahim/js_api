@@ -13,12 +13,18 @@
 
 <body>
     <header>
-<h1>Api Project</h1>
+<h1 class=" text-2xl m-5">Mobile Search Api Project</h1>
     </header>
 
     <main>
+        <section class="  m-5">
+            <input id="searchField" type="text" placeholder="Search phone ....." class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-accent">
+                Search
+            </button>
+        </section>
         <section>
-            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             </div>
         </section>
     </main>
