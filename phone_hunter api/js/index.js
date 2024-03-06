@@ -9,6 +9,16 @@ function displayPhone(phones) {
     //step-1 
     const phonecontainer=document.getElementById('phone-container')
     phonecontainer.textContent=''
+    //show all button 
+    const showAll=document.getElementById('showAll')
+    if(phones.length>15){
+        showAll.classList.remove('hidden')
+    }
+    else{
+        showAll.classList.add('hidden')
+    }
+    //display 12 phone 
+    phones=phones.slice(0,15)
     phones.forEach(phone => {
         
         //step-2 create div
