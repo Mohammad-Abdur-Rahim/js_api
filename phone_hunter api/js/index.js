@@ -8,6 +8,7 @@ function loadPhon(searchText) {
 function displayPhone(phones) {
     //step-1 
     const phonecontainer=document.getElementById('phone-container')
+    phonecontainer.textContent=''
     phones.forEach(phone => {
         
         //step-2 create div
