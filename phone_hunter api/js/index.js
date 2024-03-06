@@ -1,5 +1,5 @@
-function loadPhon() {
-    fetch('https://openapi.programming-hero.com/api/phones?search=iphone')
+function loadPhon(searchText) {
+    fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`)
         .then(res => res.json())
         .then(res => displayPhone(res.data))
 }
@@ -30,10 +30,11 @@ function displayPhone(phones) {
 
     });
 }
-loadPhon()
+
 //handle search function
 function handleSearch(){
 const searchField=document.getElementById('searchField')
 const searchText=searchField.value;
 console.log(searchText)
+loadPhon(searchText)
 }
